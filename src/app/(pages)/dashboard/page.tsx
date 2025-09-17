@@ -12,7 +12,7 @@ export default async function Dashboard(){
         <>
             <h1>Dashboard</h1>
             {
-                fatos.map((fato)=>(
+                fatos && fatos.map((fato)=>(
                     <div key={fato.id} className="max-w-md mx-auto my-4 p-6 bg-white rounded-xl shadow-md space-y-2">
                         <h1 className="text-2xl font-bold text-gray-900">{fato.title}</h1>
                         <h2 className="text-md font-medium text-indigo-600">Autor: {fato.author.name}</h2>

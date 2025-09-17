@@ -4,7 +4,7 @@ import { login } from "@/lib/action";
 import { useActionState } from "react";
 
 export default function Home() {
-  const [errorMessage, formAction, isPending] = useActionState(login, null)
+  const [errorMessage, formAction] = useActionState(login, null)
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
